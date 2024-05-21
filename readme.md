@@ -60,4 +60,4 @@ create table student(
  ;
 
 ![EER-diagram](EER-Diagram.png)
-![table](table)
+![table](table.png)
