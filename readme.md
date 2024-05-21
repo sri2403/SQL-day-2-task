@@ -27,37 +27,6 @@ This database schema is designed to manage information about students, the cours
     - `course_id`: Foreign key, references `course(course_id)`.
     - `batch_id`: Foreign key, references `batch(batch_id)`.
 
-## SQL Script to Create the Tables
-
-use dbdesign;
-
-create table mentor(
- mentor_id int primary key,
- mentor_name VARCHAR(25)
- );
- 
- create table course(
- course_id int primary key,
- course_name VARCHAR(25),
- mentor_id int,
- foreign key (mentor_id) references mentor(mentor_id)
- );
- 
- create table batch(
- batch_id int primary key,
- batch_num int
- );
- 
-create table student(
- student_id int primary key,
- first_name VARCHAR(25),
- last_name VARCHAR(25),
- email VARCHAR(25),
- course_id int,
- batch_id int,
- foreign key (course_id) references course(course_id),
- foreign key (batch_id) references batch(batch_id))
- ;
 
 ![EER-diagram](EER-Diagram.png)
 
