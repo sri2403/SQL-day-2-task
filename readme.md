@@ -59,4 +59,5 @@ create table student(
  foreign key (batch_id) references batch(batch_id))
  ;
 
-![EER-diagram](EER Diagram.png)
+![EER-diagram](EER-Diagram.png)
+![table](table)
